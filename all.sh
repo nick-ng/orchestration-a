@@ -31,6 +31,6 @@ cd robot-race
 
 ls
 
-cd $(pwd)
+cd $(parent_dir)
 
 ls
