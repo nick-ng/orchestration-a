@@ -29,6 +29,8 @@ echo $parent_dir
 git clone https://github.com/nick-ng/robot-race.git
 cd robot-race
 
+ls
+
 cd $(pwd)
 
 ls
