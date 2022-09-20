@@ -24,6 +24,7 @@ function startdocker() {
 cd ..
 
 parent_dir=$(pwd)
+echo $parent_dir
 
 git clone https://github.com/nick-ng/robot-race.git
 cd robot-race
