@@ -21,6 +21,7 @@ git pull
 git fetch -p
 git branch -vv | grep ": gone]" | awk "{print \$1}" | xargs git branch -D
 
+docker compose -f docker-compose.prod.yml down
 docker compose -f docker-compose.prod.yml build
 PORT=3010 docker compose -f docker-compose.prod.yml up -d
 
