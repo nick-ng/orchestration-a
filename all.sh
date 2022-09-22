@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function startdocker() {
   git checkout -b temp-zz
   git branch -vv | grep -v "temp-a" | awk "{print \$1}" | xargs git branch -D
