@@ -13,7 +13,8 @@ function startdocker() {
   git fetch -p
   git branch -vv | grep ": gone]" | awk "{print \$1}" | xargs git branch -D
 
-
+  docker compose -f docker-compose.prod.yml build
+  docker compose -f docker-compose.prod.yml up -d
 }
 
 # The way nginx and its modules work is determined in the configuration file. By default, the configuration file is named nginx.conf and placed in the directory /usr/local/nginx/conf, /etc/nginx, or /usr/local/etc/nginx.
