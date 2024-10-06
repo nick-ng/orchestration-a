@@ -2,12 +2,12 @@
 
 ## Instructions
 
-- Copy any new nginx config file to `/etc/nginx/conf.d/`
-  - e.g. `sudo cp ./nginx-configs/robot-race-server.pux.one.conf /etc/nginx/conf.d`
-- `sudo nginx -s reload`
-- `sudo certbot --nginx`
-  - Follow some instructions
-- (optional) Check with `systemctl list-timers`
+1. Copy any new nginx config file to `/etc/nginx/conf.d/`
+   - e.g. `sudo cp ./nginx-configs/robot-race-server.pux.one.conf /etc/nginx/conf.d`
+2. `sudo nginx -s reload`
+3. `sudo certbot --nginx`
+   - Follow some instructions
+4. (optional) Check with `systemctl list-timers`
 
 ## Individual Scripts
 
