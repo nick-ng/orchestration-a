@@ -20,5 +20,6 @@
 
 Find which ports are used:
 ```bash
-ls /etc/nginx/conf.d | xargs cat | grep proxy_pass
+cd /etc/nginx/conf.d
+ls | xargs cat | grep proxy_pass
 ```
