@@ -15,3 +15,10 @@
 | ------------- | ---------------------------------- |
 | nginx.sh      | Run with sudo. Copies nginx config |
 | robot-race.sh | Starts Robot Race compose stack    |
+
+## Useful Stuff
+
+Find which ports are used:
+```bash
+ls /etc/nginx/conf.d | xargs cat | grep proxy_pass
+```
